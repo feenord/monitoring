@@ -7,6 +7,7 @@ sleep 20
 sudo apt-get update -y
 sudo apt-get install git -y
 git clone -b main https://github.com/feenord/monitoring.git
+cd ./monitoring/
 sudo mkdir -p /etc/prometheus
 sudo mkdir -p /var/lib/prometheus
 wget https://github.com/prometheus/prometheus/releases/download/v2.31.0/prometheus-2.31.0.linux-amd64.tar.gz
