@@ -35,5 +35,7 @@ sudo apt-get install grafana -y
 sudo /bin/systemctl daemon-reload
 sudo /bin/systemctl enable grafana-server
 sudo cp ../grafana.db /var/lib/grafana/
+sudo chown grafana grafana.db
+ls -la
 sudo /bin/systemctl start grafana-server
 sudo /bin/systemctl status grafana-server
