@@ -13,7 +13,7 @@ provider "yandex" {
   zone      = var.zone
 } 
 data "yandex_compute_image" "monitoring" {
-  name       = "monitoring"
+  name       = "monitoring${var.git_sha}"
 }
 resource "yandex_compute_instance" "app" {
 name = "monitoring"
